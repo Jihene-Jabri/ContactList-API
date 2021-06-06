@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+.all {
+    display: flex;
+    flex-wrap: wrap;
+}
+.userCard {
+    display: flex;
+    width: 500px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+    transform: translate(30%, 30%);
+}
+
+.Avatar {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 3px;
+    margin-top: 50px;
+}
+
+.profileBody {
+    padding: 20px;
+}
+.profileimg {
+    background-color: rgba(106, 236, 229, 0.4);
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
